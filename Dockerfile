@@ -12,9 +12,9 @@ RUN     echo "Ok, this is from the new" && \
         export PATH="/usr/local/rvm/rubies/$RUBY_VER/bin:$PATH" && \
         rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundler && \
         rm -f /usr/local/rvm/rubies/$RUBY_VER/bin/bundle && \
-        rvm use $RUBY_VER && \
+        /bin/bash --login -c "rvm use $RUBY_VER && \
         export SSL_CERT_DIR=/etc/ssl/certs/ && \
-        gem install bundler
+        gem install bundler"
 
 
 
