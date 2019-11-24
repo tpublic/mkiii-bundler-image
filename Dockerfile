@@ -2,7 +2,7 @@ FROM docker.bluelight.limited:5000/feingkai/microkube-ruby-image
 
 
 # ENV RUBY_VER=2.5.3
-ENV RUBY_VER=ruby-2.6.0
+ENV RUBY_VER=ruby-2.6.3
 
    
 # # # Installing bundler
